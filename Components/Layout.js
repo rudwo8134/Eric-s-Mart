@@ -42,7 +42,7 @@ export default function Layout({ title, description, children }) {
     palette: {
       type: darkMode ? 'dark' : 'light',
       primary: {
-        main: '#f0c000',
+        main: '#fc323288',
       },
       secondary: {
         main: '#208080',
@@ -61,8 +61,8 @@ export default function Layout({ title, description, children }) {
   };
   const loginMenuCloseHandler = (e, redirect) => {
     setAnchorEl(null);
-    if(redirect) {
-      router.push(redirect)
+    if (redirect) {
+      router.push(redirect);
     }
   };
   const logoutClickHandler = () => {
